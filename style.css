@@ -1,0 +1,128 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: floralwhite;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 84px;
+    background-color: rgb(248, 248, 31);
+}
+
+.cabecalho-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    background-color: lightseagreen;
+}
+.menu-principal{
+    width: 1291px;
+    height: 100vh;    
+    background-color: rgb(253 253 234);
+    margin-top: 18px;
+    margin-left: 30px;
+    box-shadow: 0px 0px 13px;
+
+}
+
+table{
+    margin: 30px auto;
+}
+th{
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 25px;
+    padding-top: 3px;
+    background-color: #93c3bd;
+}
+th:nth-child(5){
+    width: 150px;
+}
+tr td{
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 3px;
+    background-color: #c7ded9;
+}
+.botao-editar{
+    background-color: #cfd15e;
+    font-weight: bold;
+    color: #0c0c0c;
+    border-color: #abad53;
+}
+.botao-deletar{
+    background-color: rgb(214, 95, 95);
+    font-weight: bold;
+    color: #0c0c0c;   
+    border-color: #9d3e3e;
+}
+.botao-editar:hover{
+    background-color: #b9bb51;
+    cursor: pointer;
+}
+.botao-deletar:hover{
+    background-color: rgb(199, 81, 81);
+    cursor: pointer;
+}
+/* FORMULARIO */
+.formulario-modal{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 500px;
+    height: 260px;
+    background-color: #93c3bd;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.formulario-modal input{
+    width: 400px;
+    height: 30px;
+    border: none;
+    margin: 3px 50px;
+    border-radius: 3px;
+}
+
+/* .formulario-modal, .active{
+    z-index: 1;
+    opacity: 1;
+} */
+
+.cabecalho-modal{
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 100%;
+    height: 42px;
+    background-color: lightseagreen;
+    margin-bottom: 10px;
+}
+.titulo-modal{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 14px 0 0 203px;
+}
+.icone-close{
+    width: 20px;
+    height: 20px;
+    margin: 11px 0 0 179px;
+}
+.botoes-modal{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
