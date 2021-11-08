@@ -14,7 +14,7 @@
 
     <main class="menu-principal">
         <h1 class="cabecalho-titulo">Usuarios</h1>
-
+        <button id="cadastrar" class="botao-cadastrar">Cadastrar</button>
         <table>
             <thead>
                 <th>Nome</th>
@@ -23,34 +23,40 @@
                 <th>Email</th>
                 <th></th>
             </thead>
-            <tbody>
-                <tr>
+            <tbody id="tabela-corpo">
+                <!-- <tr>
                     <td>Renan</td>
                     <td>4445556354</td>
                     <td>11 949392753</td>
                     <td>renan@email.com</td>
                     <td>
-                        <button class="botao-editar">Editar</button>
+                        <button id="editar" class="botao-editar">Editar</button>
                         <button class="botao-deletar">Deletar</button>
                     </td>
 
-                </tr>                
+                </tr> -->
             </tbody>
         </table>
     </main>
-    <section class="formulario-modal">
-        <div class="cabecalho-modal"> <h2 class="titulo-modal">Cadastrar</h2><img class="icone-close" src="./close.svg" alt=""></div>
-        <form action="">
-            <input type="text" placeholder="Nome">
-            <input type="text" name="" id="" placeholder="CPF">
-            <input type="tel" name="" id="" placeholder="Telefone">
-            <input type="email" name="" id="" placeholder="Email">
+    <section id="modal" class="formulario-modal">
+        <div class="cabecalho-modal">
+            <h2 class="titulo-modal">Cadastrar</h2><img id="close" class="icone-close" src="./close.svg" alt="">
+        </div>
+        <form id="formulario-cadastro" action="">
+            <input type="text" name="nome" id="nome-usuario" placeholder="Nome" required>
+            <input type="text" name="cpf" id="cpf-usuario" placeholder="CPF" pattern="[0-9]{11}" 
+            title="CPF deve ter onze dígitos, apenas números!" required>
+            <input type="tel" name="telefone" id="telefone-usuario" 
+            title="Deve ter 10 digitos para telefone fixo e 11 digitos para celular, apenas números!" pattern="[0-9]{10,11}" placeholder="Telefone" required>
+            <input type="email" name="email" id="email-usuario" placeholder="Email" required>
+           
         </form>
         <div class="botoes-modal">
-            <button>Confirmar</button>
-            <button>Cancelar</button>
+            <button id="confirmar" class="botao-confirmar">Confirmar</button>
+            <button id="cancelar" class="botao-cancelar">Cancelar</button>
         </div>
     </section>
+    <script src="./modal.js"></script>
 </body>
 
 </html>

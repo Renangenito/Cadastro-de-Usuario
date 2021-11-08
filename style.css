@@ -32,9 +32,24 @@ body{
     box-shadow: 0px 0px 13px;
 
 }
+.botao-cadastrar{
+    width: 220px;
+    height: 30px;
+    border-color: rgb(64, 165, 64);;
+    background-color: rgb(84, 209, 84);
+    font-weight: bold;
+    font-size: 16px;
+    margin: 30px 0 0 138px;
+    border-radius: 5px;
+}
+
+.botao-cadastrar:hover{
+    background-color: rgb(77, 190, 77);
+    cursor: pointer;
+}
 
 table{
-    margin: 30px auto;
+    margin: 5px auto;
 }
 th{
     width: 200px;
@@ -44,9 +59,7 @@ th{
     padding-top: 3px;
     background-color: #93c3bd;
 }
-th:nth-child(5){
-    width: 150px;
-}
+
 tr td{
     height: 25px;
     font-size: 20px;
@@ -54,52 +67,64 @@ tr td{
     padding-top: 3px;
     background-color: #c7ded9;
 }
-.botao-editar{
+
+td{
+  border-bottom: 3px solid #93c3bd;
+}
+.botao-editar, .botao-confirmar{
     background-color: #cfd15e;
     font-weight: bold;
     color: #0c0c0c;
     border-color: #abad53;
+    margin-right: 4px;
+    border-radius: 3px;
 }
-.botao-deletar{
+.botao-deletar, .botao-cancelar{
     background-color: rgb(214, 95, 95);
     font-weight: bold;
     color: #0c0c0c;   
     border-color: #9d3e3e;
+    border-radius: 3px;
 }
-.botao-editar:hover{
+.botao-editar:hover, .botao-confirmar:hover{
     background-color: #b9bb51;
     cursor: pointer;
 }
-.botao-deletar:hover{
+.botao-deletar:hover, .botao-cancelar:hover{
     background-color: rgb(199, 81, 81);
     cursor: pointer;
 }
-/* FORMULARIO */
+/* FORMULARIO MODAL*/
 .formulario-modal{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 100px;
-    left: 100px;
-    width: 500px;
+    top: 107px;
+    left: 450px;
+    width: 450px;
     height: 260px;
     background-color: #93c3bd;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    z-index: -1;
+    opacity: 0;
 }
 
 .formulario-modal input{
     width: 400px;
     height: 30px;
     border: none;
-    margin: 3px 50px;
+    margin: 3px 24px;
     border-radius: 3px;
+    outline: none;
 }
 
-/* .formulario-modal, .active{
+.active{
     z-index: 1;
     opacity: 1;
-} */
+}
 
 .cabecalho-modal{
     display: flex;
@@ -109,20 +134,34 @@ tr td{
     width: 100%;
     height: 42px;
     background-color: lightseagreen;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .titulo-modal{
     font-size: 20px;
     font-weight: bold;
-    margin: 14px 0 0 203px;
+    margin: 14px 0 0 180px;
 }
 .icone-close{
     width: 20px;
     height: 20px;
-    margin: 11px 0 0 179px;
+    margin: 11px 0 0 150px;
 }
+
+.icone-close:hover{
+    background-color: rgb(28, 145, 139);
+    cursor: pointer;
+}
+.icone-close:active{
+    background-color: lightseagreen;
+}
+
 .botoes-modal{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    width: 400px;
+    margin: 12px auto;
+}
+.botao-confirmar{
+    margin-right: 10px;
 }
