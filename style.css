@@ -1,7 +1,6 @@
-/* *{
-    margin: 0;
-    padding: 0;
-} */
+html{
+    height: 100%;
+}
 body{
     display: flex;
     flex-direction: column;
@@ -108,6 +107,7 @@ td{
     border-top-right-radius: 16px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
+    border: 3px inset;
     z-index: -1;
     opacity: 0;
 }
@@ -144,6 +144,7 @@ td{
 .icone-close{
     width: 20px;
     height: 20px;
+    border-radius: 10px;
     margin: 11px 0 0 150px;
 }
 

@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="mobille.css">    
     <title>Usuarios</title>
 </head>
 
@@ -24,17 +25,7 @@
                 <th></th>
             </thead>
             <tbody id="tabela-corpo">
-                <!-- <tr>
-                    <td>Renan</td>
-                    <td>4445556354</td>
-                    <td>11 949392753</td>
-                    <td>renan@email.com</td>
-                    <td>
-                        <button id="editar" class="botao-editar">Editar</button>
-                        <button class="botao-deletar">Deletar</button>
-                    </td>
-
-                </tr> -->
+                
             </tbody>
         </table>
     </main>
@@ -43,7 +34,7 @@
             <h2 class="titulo-modal">Cadastrar</h2><img id="close" class="icone-close" src="./close.svg" alt="">
         </div>
         <form id="formulario-cadastro" action="">
-            <input type="text" name="nome" id="nome-usuario" placeholder="Nome" required>
+            <input type="text" name="nome" data-index="new" id="nome-usuario" placeholder="Nome" required>
             <input type="text" name="cpf" id="cpf-usuario" placeholder="CPF" pattern="[0-9]{11}" 
             title="CPF deve ter onze dígitos, apenas números!" required>
             <input type="tel" name="telefone" id="telefone-usuario" 
